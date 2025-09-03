@@ -51,7 +51,7 @@ export default function LandingPage() {
       </nav>
 
       {/* Hero Section with Background Image */}
-      <div className="relative flex-1 flex items-center justify-center min-h-screen">
+      <div className="relative flex-1 flex items-end justify-center min-h-screen">
         {/* Background Image - Cover for full screen */}
         <div 
           className="absolute inset-0"
@@ -62,12 +62,12 @@ export default function LandingPage() {
             backgroundRepeat: 'no-repeat'
           }}
         >
-          {/* Overlay for text readability */}
-          <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+          {/* Overlay for text readability - stronger at bottom */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
         </div>
         
-        {/* Content - Slightly lower position */}
-        <div className="relative z-10 max-w-4xl mx-auto text-center px-6 py-20 mt-20">
+        {/* Content - At the bottom */}
+        <div className="relative z-10 max-w-4xl w-full mx-auto text-center px-6 pb-20">
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
             真剣な出会いを、
             <br />
