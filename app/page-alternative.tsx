@@ -4,8 +4,9 @@ import { useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import { useAuth } from '@/contexts/AuthContext'
 import Link from 'next/link'
+import Image from 'next/image'
 
-export default function LandingPage() {
+export default function LandingPageAlternative() {
   const router = useRouter()
   const { user, loading } = useAuth()
 
@@ -28,7 +29,7 @@ export default function LandingPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 to-pink-50 flex flex-col">
-      <nav className="bg-white shadow-sm px-6 py-4">
+      <nav className="bg-white shadow-sm px-6 py-4 z-20 relative">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
             RAINBOW BRIDGE
@@ -50,39 +51,35 @@ export default function LandingPage() {
         </div>
       </nav>
 
-      {/* Hero Section with Background Image */}
-      <div className="relative flex-1 flex items-center justify-center min-h-screen">
-        {/* Background Image - Changed to contain to show full image */}
-        <div 
-          className="absolute inset-0"
-          style={{
-            backgroundImage: "url('/img/hero-bg.png')",
-            backgroundSize: 'contain',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat'
-          }}
-        >
-          {/* Overlay for better text readability */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/30 to-black/40"></div>
+      {/* Hero Section with Full Image Display */}
+      <div className="flex-1 flex flex-col lg:flex-row items-center justify-center px-6 py-12">
+        {/* Image Container - Shows full image */}
+        <div className="w-full lg:w-1/2 flex justify-center mb-8 lg:mb-0">
+          <img 
+            src="/img/hero-bg.png" 
+            alt="RAINBOW BRIDGE" 
+            className="max-w-full h-auto object-contain"
+            style={{ maxHeight: '600px' }}
+          />
         </div>
         
         {/* Content */}
-        <div className="relative z-10 max-w-4xl mx-auto text-center px-6 py-20">
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
+        <div className="w-full lg:w-1/2 text-center lg:text-left px-6">
+          <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
             真剣な出会いを、
             <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-pink-300 to-purple-300">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
               安心できる場所で
             </span>
           </h2>
           
-          <p className="text-xl md:text-2xl text-white mb-8 drop-shadow-md max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-700 mb-8">
             RAINBOW BRIDGEは、男性同士の真剣な出会いを提供する
             <br className="hidden md:block" />
             安全で包括的なマッチングプラットフォームです
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <Link
               href="/auth/signup"
               className="px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white text-lg font-medium rounded-lg hover:from-purple-700 hover:to-pink-700 transition duration-200 shadow-lg hover:shadow-xl"
@@ -91,7 +88,7 @@ export default function LandingPage() {
             </Link>
             <Link
               href="/auth/signin"
-              className="px-8 py-4 bg-white/90 backdrop-blur text-purple-600 text-lg font-medium rounded-lg border-2 border-white/50 hover:bg-white transition duration-200 shadow-lg hover:shadow-xl"
+              className="px-8 py-4 bg-white text-purple-600 text-lg font-medium rounded-lg border-2 border-purple-600 hover:bg-purple-50 transition duration-200 shadow-lg hover:shadow-xl"
             >
               ログインする
             </Link>
