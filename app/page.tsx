@@ -50,38 +50,58 @@ export default function LandingPage() {
         </div>
       </nav>
 
-      <main className="flex-1 flex items-center justify-center px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-5xl font-bold text-gray-900 mb-6">
+      {/* Hero Section with Background Image */}
+      <div className="relative flex-1 flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: "url('/img/hero-bg.png')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}
+        >
+          {/* Overlay for better text readability */}
+          <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+        </div>
+        
+        {/* Content */}
+        <div className="relative z-10 max-w-4xl mx-auto text-center px-6 py-20">
+          <h2 className="text-5xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
             真剣な出会いを、
             <br />
-            <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-pink-300 to-purple-300">
               安心できる場所で
             </span>
           </h2>
           
-          <p className="text-xl text-gray-600 mb-8">
+          <p className="text-xl md:text-2xl text-white mb-8 drop-shadow-md max-w-3xl mx-auto">
             RAINBOW BRIDGEは、男性同士の真剣な出会いを提供する
-            <br />
+            <br className="hidden md:block" />
             安全で包括的なマッチングプラットフォームです
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/auth/signup"
-              className="px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white text-lg font-medium rounded-lg hover:from-purple-700 hover:to-pink-700 transition duration-200"
+              className="px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white text-lg font-medium rounded-lg hover:from-purple-700 hover:to-pink-700 transition duration-200 shadow-lg hover:shadow-xl"
             >
               無料で始める
             </Link>
             <Link
               href="/auth/signin"
-              className="px-8 py-4 bg-white text-purple-600 text-lg font-medium rounded-lg border-2 border-purple-600 hover:bg-purple-50 transition duration-200"
+              className="px-8 py-4 bg-white/90 backdrop-blur text-purple-600 text-lg font-medium rounded-lg border-2 border-white/50 hover:bg-white transition duration-200 shadow-lg hover:shadow-xl"
             >
               ログインする
             </Link>
           </div>
+        </div>
+      </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+      {/* Features Section */}
+      <div className="bg-white py-20 px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-xl shadow-lg p-6">
               <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4 mx-auto">
                 <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -119,7 +139,7 @@ export default function LandingPage() {
             </div>
           </div>
         </div>
-      </main>
+      </div>
 
       <footer className="bg-white border-t py-8 px-6">
         <div className="max-w-7xl mx-auto text-center text-gray-600">
