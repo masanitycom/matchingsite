@@ -141,7 +141,7 @@ export default function LandingPageAlternative() {
 
       <footer className="bg-white border-t py-8 px-6">
         <div className="max-w-7xl mx-auto text-center text-gray-600">
-          <p>&copy; 2024 RAINBOW BRIDGE. All rights reserved.</p>
+          <p>&copy; 2025 RAINBOW BRIDGE. All rights reserved.</p>
           <div className="mt-4 space-x-6">
             <Link href="/terms" className="hover:text-purple-600">利用規約</Link>
             <Link href="/privacy" className="hover:text-purple-600">プライバシーポリシー</Link>

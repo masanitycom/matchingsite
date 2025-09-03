@@ -51,32 +51,28 @@ export default function LandingPage() {
       </nav>
 
       {/* Hero Section with Background Image */}
-      <div className="relative flex-1 flex items-center justify-center min-h-screen">
-        {/* Background Image - Changed to contain to show full image */}
-        <div 
-          className="absolute inset-0"
-          style={{
-            backgroundImage: "url('/img/hero-bg.png')",
-            backgroundSize: 'contain',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat'
-          }}
-        >
-          {/* Overlay for better text readability */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/30 to-black/40"></div>
+      <div className="flex-1 flex flex-col items-center justify-center">
+        {/* Image Container - Shows full image */}
+        <div className="w-full flex justify-center pt-8 pb-4">
+          <img 
+            src="/img/hero-bg.png" 
+            alt="RAINBOW BRIDGE" 
+            className="max-w-full h-auto object-contain"
+            style={{ maxHeight: '500px' }}
+          />
         </div>
         
-        {/* Content */}
-        <div className="relative z-10 max-w-4xl mx-auto text-center px-6 py-20">
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
+        {/* Content - Below the image */}
+        <div className="max-w-4xl mx-auto text-center px-6 pb-12">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             真剣な出会いを、
             <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-pink-300 to-purple-300">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
               安心できる場所で
             </span>
           </h2>
           
-          <p className="text-xl md:text-2xl text-white mb-8 drop-shadow-md max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
             RAINBOW BRIDGEは、男性同士の真剣な出会いを提供する
             <br className="hidden md:block" />
             安全で包括的なマッチングプラットフォームです
@@ -91,7 +87,7 @@ export default function LandingPage() {
             </Link>
             <Link
               href="/auth/signin"
-              className="px-8 py-4 bg-white/90 backdrop-blur text-purple-600 text-lg font-medium rounded-lg border-2 border-white/50 hover:bg-white transition duration-200 shadow-lg hover:shadow-xl"
+              className="px-8 py-4 bg-white text-purple-600 text-lg font-medium rounded-lg border-2 border-purple-600 hover:bg-purple-50 transition duration-200 shadow-lg hover:shadow-xl"
             >
               ログインする
             </Link>
@@ -144,7 +140,7 @@ export default function LandingPage() {
 
       <footer className="bg-white border-t py-8 px-6">
         <div className="max-w-7xl mx-auto text-center text-gray-600">
-          <p>&copy; 2024 RAINBOW BRIDGE. All rights reserved.</p>
+          <p>&copy; 2025 RAINBOW BRIDGE. All rights reserved.</p>
           <div className="mt-4 space-x-6">
             <Link href="/terms" className="hover:text-purple-600">利用規約</Link>
             <Link href="/privacy" className="hover:text-purple-600">プライバシーポリシー</Link>
