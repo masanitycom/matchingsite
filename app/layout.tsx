@@ -6,7 +6,7 @@ import { AuthProvider } from "@/contexts/AuthContext";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "GayConnect - 真剣な出会いを求める男性のためのマッチングアプリ",
+  title: "RAINBOW BRIDGE - 真剣な出会いを求める男性のためのマッチングアプリ",
   description: "安全で包括的なゲイ向けマッチングプラットフォーム。真剣な恋人探し、友人関係、コミュニティ参加を支援します。",
 };
 

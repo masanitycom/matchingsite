@@ -64,7 +64,7 @@ export default function SignUpPage() {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-50 to-pink-50 px-4">
       <div className="max-w-md w-full bg-white rounded-2xl shadow-xl p-8">
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">GayConnect</h1>
+          <h1 className="text-3xl font-bold text-gray-900 mb-2">RAINBOW BRIDGE</h1>
           <p className="text-gray-600">新しい出会いをはじめよう</p>
         </div>
 

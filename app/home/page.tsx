@@ -182,7 +182,7 @@ export default function HomePage() {
       <div className="pt-16 pb-20 px-4">
         <div className="max-w-lg mx-auto">
           <div className="flex justify-between items-center mb-6">
-            <h1 className="text-2xl font-bold text-gray-900">GayConnect</h1>
+            <h1 className="text-2xl font-bold text-gray-900">RAINBOW BRIDGE</h1>
             <div className="flex items-center space-x-4">
               <span className="text-sm text-gray-600">
                 本日のいいね: {dailyLikesRemaining}回

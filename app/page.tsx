@@ -31,7 +31,7 @@ export default function LandingPage() {
       <nav className="bg-white shadow-sm px-6 py-4">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-            GayConnect
+            RAINBOW BRIDGE
           </h1>
           <div className="space-x-4">
             <Link
@@ -61,7 +61,7 @@ export default function LandingPage() {
           </h2>
           
           <p className="text-xl text-gray-600 mb-8">
-            GayConnectは、男性同士の真剣な出会いを提供する
+            RAINBOW BRIDGEは、男性同士の真剣な出会いを提供する
             <br />
             安全で包括的なマッチングプラットフォームです
           </p>
@@ -123,7 +123,7 @@ export default function LandingPage() {
 
       <footer className="bg-white border-t py-8 px-6">
         <div className="max-w-7xl mx-auto text-center text-gray-600">
-          <p>&copy; 2024 GayConnect. All rights reserved.</p>
+          <p>&copy; 2024 RAINBOW BRIDGE. All rights reserved.</p>
           <div className="mt-4 space-x-6">
             <Link href="/terms" className="hover:text-purple-600">利用規約</Link>
             <Link href="/privacy" className="hover:text-purple-600">プライバシーポリシー</Link>

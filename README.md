@@ -1,7 +1,7 @@
-# GayConnect - ゲイ向けマッチングアプリ
+# RAINBOW BRIDGE - ゲイ向けマッチングアプリ
 
 ## 概要
-GayConnectは、男性同士の真剣な出会いを提供する安全で包括的なマッチングプラットフォームです。
+RAINBOW BRIDGEは、男性同士の真剣な出会いを提供する安全で包括的なマッチングプラットフォームです。
 
 ## 主な機能
 - 👤 ユーザー認証・プロフィール管理
@@ -34,7 +34,7 @@ GayConnectは、男性同士の真剣な出会いを提供する安全で包括�
 ```bash
 # リポジトリをクローン
 git clone [your-repo-url]
-cd gay-connect
+cd rainbow-bridge
 
 # 依存関係をインストール
 npm install
@@ -56,7 +56,7 @@ STRIPE_WEBHOOK_SECRET=your_stripe_webhook_secret
 
 # App Configuration
 NEXT_PUBLIC_APP_URL=http://localhost:3000
-NEXT_PUBLIC_APP_NAME=GayConnect
+NEXT_PUBLIC_APP_NAME=RAINBOW BRIDGE
 ```
 
 ### 4. Supabaseのセットアップ
@@ -85,7 +85,7 @@ npm run dev
 
 ## プロジェクト構造
 ```
-gay-connect/
+rainbow-bridge/
 ├── app/                    # Next.js App Router
 │   ├── auth/              # 認証関連ページ
 │   ├── home/              # ホーム（スワイプ画面）
